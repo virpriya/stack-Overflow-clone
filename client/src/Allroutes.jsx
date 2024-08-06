@@ -9,7 +9,7 @@ import Tags from "./Pages/Tags/tags"
 import Users from "./Pages/Users/users";
 import Userprofile from "./Pages/UserProfile/userprofile";
 
-function Allroutes(slideIn, handleSlideIn) {
+function Allroutes({slideIn, handleSlideIn}) {
   return (
     <Routes>
       <Route
