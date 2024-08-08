@@ -21,7 +21,7 @@ const Questiondetails = () => {
   const user = useSelector((state) => state.currentuserreducer);
   const navigate = useNavigate();
   const location = useLocation();
-  const url = "http/localhost:3000";
+  const url = "https://stack-overflow-clone-kszx.onrender.com";
   const { id } = useParams();
   
   const handlepostans = (e, answerlength) => {
