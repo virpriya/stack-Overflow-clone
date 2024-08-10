@@ -92,8 +92,14 @@
     }
   }
   
-  @media screen and (max-width: 740px) {
+  @media screen and (max-width: 740px) {s
     .display-question-container .display-votes-ans {
       padding: 10px;
+    }
+  }
+
+  @media screen and (max-width: 480px){
+    .main-bar-header{
+      display: block;
     }
   }

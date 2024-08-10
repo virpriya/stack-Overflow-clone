@@ -23,7 +23,8 @@
 
 @media screen and (max-width: 480px) {
   .home-container-2 {
-   background-color: aquamarine;
-   
+    max-width: 100%;
+    width: 100%;
   }
 }
+
