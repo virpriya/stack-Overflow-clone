@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Leftsidebar from "../../Component/Leftsidebar/leftsidebar";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import moment from "moment";
 import Avatar from "../../Component/Avatar/avatar";
 import Profilebio from "./profilebio";
@@ -35,6 +35,12 @@ const Userprofile = ({ slideIn }) => {
               </Avatar>
               <div className="user-name">
                 <h1>{currentProfile?.name}</h1>
+                {/* track location */}
+                <div>
+                  <button>
+                  <Link to="/Userlocation" style={{color: "gray", textDecoration: "none" }}>Obtain Location</Link>
+                  </button>
+                </div>
                 <p>
                   <FontAwesomeIcon icon={faBirthdayCake} /> Joined{" "}
                   {moment(currentProfile?.joinedon).fromNow()}

@@ -5,6 +5,7 @@ import "./auth.css";
 import Aboutauth from "./aboutauth";
 import icon from "../../assets/icon.png";
 import { signup, login } from "../../action/auth";
+import { GoogleLogin } from "@react-oauth/google";
 
 const Auth = () => {
   const [issignup, setSignup] = useState(false);
@@ -86,7 +87,17 @@ const Auth = () => {
           <button type="submit" className="auth-btn">
             {issignup ? "Sign up" : "Log In"}
           </button>
+          <p style={{ textAlign: "center" }}>or</p>
+          <GoogleLogin 
+            onSuccess={(credentialResponse) => {
+              console.log(credentialResponse);
+            }}
+            onError={() => {
+              console.log("Login Failed");
+            }}
+          />
         </form>
+
         <p>
           {issignup ? "Already have an account?" : "Don't have an account?"}
           <button

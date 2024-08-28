@@ -1,0 +1,13 @@
+.user-location-container {
+    
+    width: 40%;
+    margin: 10% auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-shadow: 0 10px 25px rgb(0 0 0 / 5%), 0 20px 48px rgb(0 0 0 / 5%),
+      0 1px 4px rgb(0 0 0 / 10%);
+}

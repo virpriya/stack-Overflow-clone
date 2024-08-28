@@ -8,6 +8,7 @@ import Displayquestion from  "./Pages/Question/displayquestion"
 import Tags from "./Pages/Tags/tags"
 import Users from "./Pages/Users/users";
 import Userprofile from "./Pages/UserProfile/userprofile";
+import Userlocation from "./Pages/UserProfile/userlocaton";
 
 function Allroutes({slideIn, handleSlideIn}) {
   return (
@@ -43,6 +44,10 @@ function Allroutes({slideIn, handleSlideIn}) {
       <Route
         path="/Users/:id"
         element={<Userprofile slideIn={slideIn} handleSlideIn={handleSlideIn}/>}
+      ></Route>
+      <Route
+        path="/Userlocation"
+        element={<Userlocation />}
       ></Route>
     </Routes>
   );
