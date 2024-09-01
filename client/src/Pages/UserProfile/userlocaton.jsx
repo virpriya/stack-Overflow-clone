@@ -16,7 +16,7 @@ const Userlocation = () => {
   console.log(location, "location");
   return (
     <div className="user-location-container">
-      <p>City:  {location.city_district}</p>
+      <p>City:  {location.county}</p>
       <p>State:  {location.state}</p>
       <p>Country: {location.country}</p>
     </div>
